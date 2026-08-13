@@ -20,7 +20,7 @@ const About = () => {
       <div style={styles.cardGroup}>
         {/* Bio Card */}
         <div style={styles.card}>
-          <h2 style={styles.cardTitle}>👤 Xin chào, tôi là Đỗ Tiến Đạt</h2>
+          <h2 style={styles.cardTitle}>👤 Xin chào, tôi là HackerVipPro</h2>
           <p style={styles.cardText}>
             Tôi là một lập trình viên phần mềm hướng tới việc tối ưu hóa trải nghiệm người dùng 
             và xây dựng hệ thống triển khai tự động (CI/CD). Tôi tin rằng công nghệ hiệu quả 
