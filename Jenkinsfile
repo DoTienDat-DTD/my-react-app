@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Tên NodeJS đã cấu hình trong Global Tool Configuration trên Jenkins
-        nodejs 'NodeJS'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -15,13 +10,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'
+                bat 'cmd /c npm install'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'npm run build'
+                bat 'cmd /c npm run build'
             }
         }
     }
