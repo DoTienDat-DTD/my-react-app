@@ -2,31 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Checkout & Deploy') {
             steps {
-                checkout scm
-            }
-        }
-
-        stage('Install Dependencies') {
-            steps {
-                bat 'cmd /c npm install'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                bat 'cmd /c npm run build'
+                bat 'call D:\\scripts\\deploy.bat'
             }
         }
     }
 
     post {
         success {
-            echo 'Build project React thành công!'
+            echo 'Triển khai dự án React thành công vào D:\\WebServer\\ReactApp!'
         }
         failure {
-            echo 'Build thất bại, vui lòng kiểm tra lại log.'
+            echo 'Quá trình triển khai thất bại, vui lòng kiểm tra lại log.'
         }
     }
 }
