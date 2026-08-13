@@ -24,7 +24,7 @@ const About = () => {
           <p style={styles.cardText}>
             Tôi là một lập trình viên phần mềm hướng tới việc tối ưu hóa trải nghiệm người dùng 
             và xây dựng hệ thống triển khai tự động (CI/CD). Tôi tin rằng công nghệ hiệu quả 
-            phải đi kèm với quy trình phát triển tinh gọn.
+            phải đi kèm với quy trình phát triển tinh gọn. :)))
           </p>
         </div>
 
